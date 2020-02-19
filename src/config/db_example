@@ -1,0 +1,11 @@
+const { Pool } = require('pg')
+
+// Install pg with npm or yarn and change this files to "db.js"
+
+module.exports = new Pool({
+    user: "",
+    password: "",
+    host: "localhost",
+    port: 5432,
+    database: ""
+})

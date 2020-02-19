@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules/
 
 # db files
-config/db.js
+db.js
 
 # Windows thumbnail cache files
 Thumbs.db

@@ -19,6 +19,8 @@ routes.get("/", function (req, res) {
 routes.post("/", function (req, res) {
     const { name, blood, email } = req.body
 
+    if(name == "" || blood == "" || email == "") return res.send("Please, fill in all fields!")
+
     const query = `INSERT INTO donors ("name", "blood", "email")
     VALUES($1, $2, $3)`
 
